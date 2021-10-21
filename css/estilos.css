@@ -1,0 +1,321 @@
+	body{
+    margin: 0;
+    font-family: montserrat;
+    text-align: center;
+}
+
+header{
+	width:100%;
+	background:#94dee1
+}
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+}
+
+header label:hover{
+	cursor: pointer;
+	background: #34B4B9
+}
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content:center;
+	flex-direction:row;
+}
+
+.menu li a:hover{
+    background: #2DA8AD;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.menu li{
+	flex-grow: 1;
+}
+.logo {
+    margin-right: -37px;
+    margin-bottom: -37px;
+    margin-left: -37px;
+    margin-top: -37px;
+    text-align: center;
+}
+
+.quiensoy {
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    text-align: center;
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+}
+.quiensoy_img {
+    width: 80%;
+    height: auto;
+    display: none;
+    margin-left: 50px;
+}
+ 
+.quiensoy_imgglobal {
+    width: 80%;
+    text-align: center;
+    height: 0%;
+  
+}
+
+.textopequeño {
+    font-size: small;
+    text-align: center;
+    margin-left: 31px;
+    margin-right: 31px;
+    letter-spacing: 1px;
+    color: #AA1D4F;
+	display: none
+}
+.texto {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #C6174E;
+}
+.h1{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    color: #A91D4E;
+
+}
+.linea{
+	background: #94DEE1;
+	height: 5px;
+	width: 100%;
+	display: block;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+	
+}
+.contenedor-imagenes .imagen{
+    width: 15%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow:  0px 0px 3px 0px rgba(0,0,0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #94DEE1 ;
+    width: 100%;
+    height: 0%;
+    transition: .5s;
+    overflow: inherit ;
+}
+.overlay h2{
+    color:white;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align:  center;
+    transform: translate(-50%, -50%);
+}
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+    }
+
+.footer {
+    background-color: #94dee1;
+    width: 50%;
+    height: 120px;
+    float: left;
+}
+
+.titulo {
+    font-family: playfair-display;
+    font-size: 35px;
+    font-style: normal;
+    text-align: center;
+    line-height: 69px;
+    height: 37px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.foter_texto {
+    font-family: montserrat;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 5px;
+    line-height: 24px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.contenido {
+    text-align: center;
+    line-height: 1px;
+    margin-top: 11px;
+}
+
+.habilidaes_img  {
+    height: 0%;
+    width: 80%;
+    text-align: center;
+
+}
+.espacio {
+}
+	.habilidades {
+    width: 100%;
+}
+@media(max-width:1000px){
+		
+	header label{
+		display:block;}
+	
+	.menu{
+		position: absolute;
+		background: #94DEE1;
+		width:50%;
+		margin-left:-50%;
+		transition: all 0.8s; }
+	
+	.menu ul{
+		flex-direction: column;}
+	
+	.menu li{
+		border-top: 1px solid #FFFFFF}
+	
+	#btn-menu:checked ~ .menu{
+		margin:0;
+		}
+	.quiensoy {
+    text-align: center;
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+	display: block;
+	
+}
+	.quiensoy_img {
+    width: 80%;
+    height: auto;
+	display: block;
+}
+	.quiensoy_imgglobal{
+		display: none;
+}
+	.texto{
+		display: none
+	}
+	.textopequeño{
+		display: block
+	}
+	.espacio{
+		display: none}
+}
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width:95%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        fot-size:22px;
+    }
+    .contenedor-imagenes{
+            width:90%;
+    }
+.titulo {display: none;
+}
+.contenido {
+display:none;}
+.footer {display:none;}
+
+
+
+    .contenedor-imagenes .imagen{
+        width: 80%
+    }
+#quien_sot {
+}
+#estudios {
+}
+
+	
+#habilidades {
+}
+.contenido {
+}
+
+
+}
+#habilidades {
+}
+#experiencia {
+}
+#mapa {
+}
+
+@media screen{
+}
+
+@media (max-width:1000px){
+}
+
+@media (max-width:1000px){
+}
+
+@media (max-width:1000px){
+}
+#contacto {
+}
